@@ -17,22 +17,55 @@ body {
     height: 100vh;
 }
 
-.page-content {
-    max-width: 60%;
-    padding: 4rem;
+/* Flashing FRAME */
+.flashing-frame {
+    font-size: 4rem;
+    font-weight: bold;
+    animation: flash 1s infinite alternate;
 }
 
-h1, h2 {
-    font-size: 3rem;
-    font-weight: 900;
-    margin-bottom: 1rem;
+@keyframes flash {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
-.diatype-m {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+/* Marquee Coming Soon */
+.coming-soon {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
 }
 
+/* White Box for Screening Info */
+.screening-box {
+    background-color: white;
+    padding: 1rem;
+    display: inline-block;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.screening-text {
+    color: red;
+    font-variant: small-caps;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Wednesdays with Star Icons */
+.wednesday-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+/* Fixed Upcoming Program */
+.upcoming-program {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Navigation Buttons */
 .nav {
     margin: 2rem 0;
 }
@@ -54,17 +87,45 @@ h1, h2 {
     color: black;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 1rem;
+/* Films Box with Scrolling */
+.films-box {
+    width: 50%;
+    height: 300px;
+    overflow: hidden;
+    margin: 1rem auto;
+    border: 2px solid white;
+    padding: 1rem;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
 }
 
-ul li {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
+.films-marquee {
+    width: 100%;
+    height: 100%;
 }
 
+.film-entry {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.film-date {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.film-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.film-tagline {
+    font-size: 1rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* More Button */
 .button-4 {
     background: white;
     color: black;
