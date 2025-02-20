@@ -9,19 +9,17 @@ body {
     padding: 0;
 }
 
-.page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+.page-content {
+    max-width: 80%;
+    padding: 4rem;
 }
 
 /* Flashing FRAME */
 .flashing-frame {
-    font-size: 4rem;
+    font-size: 7rem;
     font-weight: bold;
     animation: flash 1s infinite alternate;
+    text-transform: uppercase;
 }
 
 @keyframes flash {
@@ -30,8 +28,13 @@ body {
 }
 
 /* Marquee Coming Soon */
+.marquee-container {
+    overflow: hidden;
+    width: 100%;
+}
+
 .coming-soon {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     margin: 1rem 0;
 }
@@ -39,30 +42,38 @@ body {
 /* White Box for Screening Info */
 .screening-box {
     background-color: white;
-    padding: 1rem;
+    padding: 2rem;
     display: inline-block;
-    border-radius: 8px;
-    margin-top: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 60%;
 }
 
 .screening-text {
     color: red;
     font-variant: small-caps;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
+}
+
+.screening-stars {
+    font-size: 2rem;
+    color: red;
 }
 
 /* Wednesdays with Star Icons */
 .wednesday-text {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    margin: 1rem 0;
+    margin-top: 1rem;
 }
 
 /* Fixed Upcoming Program */
 .upcoming-program {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 3rem;
 }
 
 /* Navigation Buttons */
@@ -73,11 +84,11 @@ body {
 .button-2 {
     background: black;
     color: white;
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 2rem;
     margin: 0.5rem;
     border-radius: 5rem;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     display: inline-block;
 }
@@ -89,14 +100,14 @@ body {
 
 /* Films Box with Scrolling */
 .films-box {
-    width: 50%;
-    height: 300px;
+    width: 70%;
+    height: 350px;
     overflow: hidden;
-    margin: 1rem auto;
-    border: 2px solid white;
-    padding: 1rem;
+    margin: 2rem auto;
+    border: 3px solid white;
+    padding: 1.5rem;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .films-marquee {
@@ -110,34 +121,18 @@ body {
 }
 
 .film-date {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
 .film-title {
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: bold;
+    font-style: italic;
 }
 
 .film-tagline {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-style: italic;
     opacity: 0.8;
-}
-
-/* More Button */
-.button-4 {
-    background: white;
-    color: black;
-    padding: 1rem 2rem;
-    margin-top: 2rem;
-    border-radius: 5rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.button-4:hover {
-    background: black;
-    color: white;
 }
