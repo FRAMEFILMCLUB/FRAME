@@ -9,29 +9,71 @@
 <body>
     <div class="page">
         <div class="page-content">
-            <h1 class="diatype-l">FRAME COMING SOON</h1>
-            <h1 class="diatype-l">COMING SOON</h1>
-            <p class="diatype-m">FORTNIGHTLY SCREENINGS OF FILMS THAT INSPIRE, CHALLENGE, AND ENTERTAIN</p>
-            <p class="diatype-m">WEDNESDAYS 3:20PM</p>
+            <!-- Flashing FRAME -->
+            <h1 class="flashing-frame">FRAME</h1>
 
+            <!-- Marquee Scrolling COMING SOON -->
+            <marquee class="coming-soon" behavior="scroll" direction="left">
+                ⭐ COMING SOON ⭐ COMING SOON ⭐ COMING SOON ⭐
+            </marquee>
+
+            <!-- Red small-caps text in white box -->
+            <div class="screening-box">
+                <p class="screening-text">FORTNIGHTLY SCREENINGS OF FILMS THAT INSPIRE, CHALLENGE, AND ENTERTAIN</p>
+            </div>
+
+            <!-- Wednesday + star icons -->
+            <p class="wednesday-text">⭐ WEDNESDAYS 3:20PM ⭐</p>
+
+            <!-- Navigation Buttons -->
             <div class="nav">
                 <a href="#" class="button-2">ABOUT</a>
                 <a href="mailto:youremail@example.com" class="button-2">EMAIL</a>
                 <a href="#films" class="button-2">FILMS</a>
-                <a href="#schedule" class="button-2">UPCOMING PROGRAM</a>
             </div>
 
-            <div id="schedule">
-                <h2 class="diatype-m">UPCOMING FILMS</h2>
-                <ul>
-                    <li><b>30.04.2025</b> - <i>PressPausePlay (2011)</i> - The impact of digital technology on creativity and art</li>
-                    <li><b>14.05.2025</b> - <i>The Social Dilemma (2020)</i> - Tech experts sound the alarm on their own creations</li>
-                    <li><b>28.05.2025</b> - <i>Exit Through the Gift Shop (2010)</i> - Street art and the role of authenticity</li>
-                    <li><b>11.06.2025</b> - <i>Helvetica (2007)</i> - Typography and design’s influence on culture</li>
-                    <li><b>25.06.2025</b> - <i>Jiro Dreams of Sushi (2011)</i> - Mastery, dedication, and the pursuit of perfection</li>
-                    <li><b>16.07.2025</b> - <i>Baraka (1992)</i> - Human life and nature across the world</li>
-                    <li><b>30.07.2025</b> - <i>The Grand Budapest Hotel (2014)</i> - Wes Anderson’s visual storytelling</li>
-                </ul>
+            <!-- Fixed Upcoming Program -->
+            <h2 class="upcoming-program">UPCOMING PROGRAM</h2>
+
+            <!-- Marquee Scrolling Films List -->
+            <div class="films-box">
+                <marquee class="films-marquee" behavior="scroll" direction="up" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();">
+                    <div class="film-entry">
+                        <p class="film-date">30.04.2025</p>
+                        <p class="film-title">PressPausePlay (2011)</p>
+                        <p class="film-tagline">The impact of digital technology on creativity and art</p>
+                    </div>
+                    <div class="film-entry">
+                        <p class="film-date">14.05.2025</p>
+                        <p class="film-title">The Social Dilemma (2020)</p>
+                        <p class="film-tagline">Tech experts sound the alarm on their own creations</p>
+                    </div>
+                    <div class="film-entry">
+                        <p class="film-date">28.05.2025</p>
+                        <p class="film-title">Exit Through the Gift Shop (2010)</p>
+                        <p class="film-tagline">Street art and the role of authenticity</p>
+                    </div>
+                    <div class="film-entry">
+                        <p class="film-date">11.06.2025</p>
+                        <p class="film-title">Helvetica (2007)</p>
+                        <p class="film-tagline">Typography and design’s influence on culture</p>
+                    </div>
+                    <div class="film-entry">
+                        <p class="film-date">25.06.2025</p>
+                        <p class="film-title">Jiro Dreams of Sushi (2011)</p>
+                        <p class="film-tagline">Mastery, dedication, and the pursuit of perfection</p>
+                    </div>
+                    <div class="film-entry">
+                        <p class="film-date">16.07.2025</p>
+                        <p class="film-title">Baraka (1992)</p>
+                        <p class="film-tagline">Human life and nature across the world</p>
+                    </div>
+                    <div class="film-entry">
+                        <p class="film-date">30.07.2025</p>
+                        <p class="film-title">The Grand Budapest Hotel (2014)</p>
+                        <p class="film-tagline">Wes Anderson’s visual storytelling</p>
+                    </div>
+                </marquee>
             </div>
 
             <a href="#" class="button-4">MORE</a>
@@ -39,3 +81,4 @@
     </div>
 </body>
 </html>
+
